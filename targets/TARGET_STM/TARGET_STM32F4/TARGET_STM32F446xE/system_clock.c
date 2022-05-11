@@ -191,7 +191,7 @@ uint8_t SetSysClock_PLL_HSI(void)
     RCC_OscInitStruct.PLL.PLLState        = RCC_PLL_ON;
     RCC_OscInitStruct.PLL.PLLSource       = RCC_PLLSOURCE_HSI;
     RCC_OscInitStruct.PLL.PLLM            = 16;            // VCO input clock = 1 MHz (16 MHz / 16)
-    RCC_OscInitStruct.PLL.PLLN            = 360;           // VCO output clock = 360 MHz (1 MHz * 360)
+    RCC_OscInitStruct.PLL.PLLN            = 300;           // VCO output clock = 360 MHz (1 MHz * 360)
     RCC_OscInitStruct.PLL.PLLP            = RCC_PLLP_DIV2; // PLLCLK = 180 MHz (360 MHz / 2)
     RCC_OscInitStruct.PLL.PLLQ            = 7;             //
     RCC_OscInitStruct.PLL.PLLR            = 6;             //
